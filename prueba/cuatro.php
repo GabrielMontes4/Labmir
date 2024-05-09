@@ -1,15 +1,15 @@
 <?php
-session_start();
+//session_start();
 
-if(!empty($_SESSION["id"])){
-    $id = $_SESSION["id"];
+if(!empty($_GET["id"])){
+    $id = $_GET["id"];
 
     // Vamos a utilizar una sentencia preparada para verificar el usuario
     $stmt = $conn->prepare("SELECT * FROM datos_products WHERE id = ?");
     $stmt->bind_param("i",$id);
     $stmt->execute();
 
-    $stmt->bind_result($id2,$titulo,$descripcion,$imagen,$fechaActualizacion);
+    $stmt->bind_result($id2,$titulo,$imagen,$descripcion,$fechaActualizacion);
             
     $stmt->fetch();  
 }else{

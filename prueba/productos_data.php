@@ -222,14 +222,16 @@ include('cuatro.php')
 					
 					</div>
 				</div>
-
+                
 				<div class="about-one_image-column col-lg-6 col-md-12 col-sm-12">
 					<div class="about-one_image-inner">
 				
 						<div class="parallax-scene-4">
 							<div class="about-one_image-two" data-depth="0.20">
 								<?php 
-									echo "<img id='img' src='../images/lab_mir/productos/".$imagen."'>"
+									echo "<img id='img' src='images/$imagen'/>";
+                                    
+                                    echo "debo ser ordenado";
 								?>
 							</div>
 						</div>
@@ -248,9 +250,7 @@ include('cuatro.php')
 	<div class="outer-container">
 		<div class="gallery-carousel owl-carousel owl-theme">
 
-			<?php
-			include('tres.php');
-			?>
+			
 		</div>
 	</div>
 </section>

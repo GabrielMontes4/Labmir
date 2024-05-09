@@ -24,16 +24,16 @@
 
         if($_SERVER["REQUEST_METHOD"] == "POST"){
 			$valor_id = $_POST["valor_id"];
-            session_start();
-            $_SESSION["id"] = $valor_id;
-            header("Location: productos_data.php");
+            //session_start();
+            //$_SESSION["id"] = $valor_id;
+            header("Location: productos_data.php?id=$valor_id");
             exit();
         }
         
-        echo "<form method='POST' id='form' class='gallery-four_block col-lg-4 col-md-6 col-sm-12'>
+        echo "<a href='productos_data.php?id=$id' id='a' class='gallery-four_block col-lg-4 col-md-6 col-sm-12'>
                 <label for='submit".$id."' class='gallery-four_block-inner'>
                     <div class='gallery-four_block-image'>
-                    <img src='../images/lab_mir/productos/".$imagen."' style='width: 100%'/>";
+                    <img src='images/".$imagen."' style='width: 100%'/>";
         
         echo "<div class='gallery-four_block-overlay'>
                 <h4 class='gallery-one_block-heading text-white'>".$titulo."</h4>
@@ -42,7 +42,7 @@
 			<input type='hidden' name='valor_id' value='".$id."'>
             <input type='submit' id='submit".$id."'>
           </label>
-        </form>";
+        </a>";
         
         }
         
@@ -50,4 +50,3 @@
 
     $conn->close();
     ?>
-

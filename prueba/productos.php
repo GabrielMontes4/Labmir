@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -149,7 +147,11 @@
 							<!--Keep This Empty / Menu will come through Javascript-->
 						</nav>
 						<!-- Main Menu End-->
-						
+						<?php
+				//session_start();
+				//include('dos.php');
+				include('tres.php');
+			?>
 						<!-- Mobile Navigation Toggler -->
 						<div class="mobile-nav-toggler"><span class="icon"><img src="../images/icons/menu.png" alt="" /></span></div>
 						
@@ -192,11 +194,7 @@
         <div class="row clearfix">
             
 			<!-- Gallery Two Block -->
-            <?php
-				//session_start();
-				include('dos.php');
-				include('tres.php');
-			?>	
+            	
 						
         </div>
 
