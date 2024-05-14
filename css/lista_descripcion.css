@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/*NAVBAR*/
+
+#adm_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 55px;
+    color: rgb(70, 128, 255);
+    z-index: 100;
+}
+
+#adm_navbar img{
+    width: 90px;
+    margin-left: 20px;
+}
+
+#adm_navbar div{
+    width: 90px;
+    margin-right: 20px;
+}
+
+/*MAIN*/
+
+#adm_distribucion{
+    display: flex;
+    width: 100vw;
+    height: 91vh;
+    background-color: rgb(248, 249, 251);
+    box-shadow: inset 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
+}
+
+/*ASIDE*/
+
+#adm_aside{
+    width: 256px;
+    height: 324px;
+    background-color: white;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+#aside_menu{
+    height: 70px;
+    font-weight: bold;
+    color: rgb(210, 212, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0.5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#lista_aside{
+    list-style: none;
+    background-color: rgb(70, 128, 255);
+}
+
+
+#lista_aside a{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#lista_aside a:hover{
+    background-color: rgb(60, 123, 255);
+}
+
+#lista_aside img{
+    width: 24px;
+    margin-left: 30px;
+}
+
+#lista_aside a li{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/*ESPACIO DE OPCIONES*/
+
+#adm_spc_panel{
+    width: 81%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#adm_spc_list{
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+/* ESPACIO DE OPCIONES TOP*/
+
+#top_spc_list{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/*ESPACIO DE OPCIONES BUSCAR/AGREGAR*/
+
+#spc_search_add{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#spc_search_add div{
+    display: flex;
+}
+
+#espacio1{
+    width: 60px;
+}
+
+#input_search{
+    width: 320px;
+    padding: 5px 15px 4px 15px;
+    border-radius: 90px 0px 0px 90px;
+    border: 1px solid rgb(70, 128, 255);
+    height: 45px;
+}
+
+#btn_search{
+    padding: 8px 15px 7px 6px;
+    width: 60px;
+    height: 45px;
+    border: 1px solid rgb(70, 128, 255);
+    border-radius: 0px 90px 90px 0px;
+    background-color: rgb(70, 128, 255);
+    color: aliceblue;
+}
+
+#btn_search:hover{
+    cursor: pointer;
+    background-color: rgb(60, 123, 255);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+/*ESPACIO DE OPCIONES PARA TABLA*/
+#space_table{
+    margin-top: 40px;
+    background-color: rgb(248, 249, 251);
+    box-shadow: inset 0 0.5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#div_thead{
+    background-color: white;
+}
+
+th{
+    height: 90px;
+    border-bottom: 1px solid rgb(206,212,218);
+}
+
+tr{
+    height: 110px;
+}
+
+td{
+    height: 85px;
+    border-bottom: 1px solid rgb(206,212,218);
+}
+
+.uno{
+    width: 450px;
+}
+
+.dos{
+    width: 175px;
+}
+
+.tres{
+    width: 175px
+}
+
+.cuatro{
+    width: 250px
+}
+
+#title_list{
+    text-align: center;
+}
+
+#img_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_div img{
+    width: 62%;
+}
+
+#update{
+    text-align: center;
+}
+
+#spc_btns_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.botones{
+    padding: 7px 29px;
+    border-radius: 90px;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn_editar{
+    background-color: rgb(255, 193, 7);
+}
+
+.btn_editar:hover{
+    cursor: pointer;
+    background-color: rgb(232, 174, 0);
+}
+
+.btn_editar:hover a{
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.btn_eliminar{
+    background-color: rgb(220, 53, 69);
+}
+
+.btn_eliminar:hover{
+    cursor: pointer;
+    background-color: rgb(183, 32, 47);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.btn_add{
+    background-color: rgba(70, 128, 255);
+    color: aliceblue;
+}
+
+.btn_add:hover{
+    cursor: pointer;
+    background-color: rgb(60, 123, 255);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+}

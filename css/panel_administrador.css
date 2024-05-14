@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*NAVBAR*/
+
+#adm_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 55px;
+    color: rgb(70, 128, 255);
+    z-index: 100;
+}
+
+#adm_navbar img{
+    width: 90px;
+    margin-left: 20px;
+}
+
+#adm_navbar div{
+    width: 90px;
+    margin-right: 20px;
+}
+
+/*MAIN*/
+
+#adm_distribucion{
+    display: flex;
+    width: 100vw;
+    height: 91vh;
+    background-color: rgb(248, 249, 251);
+    box-shadow: inset 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+/*ASIDE*/
+
+#adm_aside{
+    width: 256px;
+    height: 324px;
+    background-color: white;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+#aside_menu{
+    height: 70px;
+    font-weight: bold;
+    color: rgb(210, 212, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0.5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#lista_aside{
+    list-style: none;
+    background-color: rgb(70, 128, 255);
+}
+
+
+#lista_aside a{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#lista_aside a:hover{
+    background-color: rgb(60, 123, 255);
+}
+
+#lista_aside img{
+    width: 24px;
+    margin-left: 30px;
+}
+
+#lista_aside a li{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/*PANEL DE OPCIONES*/
+
+#adm_spc_panel{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#opciones{
+    width: 500px;
+    height: 60px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 35px;
+    text-decoration: none;
+    box-shadow: 0 0.125rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+#opciones:hover{
+    box-shadow: 0 0.125rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+#opciones .div{
+    width: 9px;
+    height: 9px;
+    border-radius: 90px;
+}
+
+#azul{
+    background-color: rgb(70, 128, 255);
+}
+
+#rojo{
+    background-color: red;
+}
+
+.end{
+    border-radius: 0px 90px 90px 0px;
+    height: 60px;
+    width: 30px;
+    display: none;
+}
+
+#opciones:hover .end{
+    display: flex;
+}
+
+#end_azul{
+    background-color: rgb(70, 128, 255);
+}
+
+#end_rojo{
+    background-color: red;
+}
+
+#section_opc{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+#opciones h4{
+    color: rgb(70, 128, 255);
+    font-weight: bold;
+}
+
+#opciones:hover h4{
+    text-decoration: underline;
+    color: rgb(0, 78, 250);;
+}
+
+
