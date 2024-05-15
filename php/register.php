@@ -6,7 +6,7 @@
         $contrasena_encrypte = password_hash($contrasena, PASSWORD_DEFAULT);
     
         if(preg_match('/^[A-Z].*$/', $usuario)){
-            if(preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d.]{8,}$/',$contrasena)){
+            if(preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d.]{4,}$/',$contrasena)){
                 if($contrasena == $contrasena2){
                    
                     $sql = "INSERT INTO usuarios (usuario, contrasena) VALUES ('$usuario', '$contrasena_encrypte')";

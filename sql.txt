@@ -1,0 +1,24 @@
+CREATE DATABASE prueba;
+
+USE prueba;
+
+CREATE TABLE usuarios(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario varchar(250),
+    contrasena varchar(250)
+);
+
+CREATE TABLE datos_productos(
+	id int primary key AUTO_INCREMENT,
+  	titulo varchar(250),
+    descripcion longtext,
+    imagen longblob,
+    fechaActualizacion date
+);
+
+CREATE TABLE datos_novedades(
+	id int primary key AUTO_INCREMENT,
+  	titulo varchar(250),
+    imagen longblob,
+    fechaActualizacion date
+);

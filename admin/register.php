@@ -1,7 +1,6 @@
 <?php
 include('../php/config.php');
 include('../php/register.php');
-include('../php/validar_sesion.php');
 
 ?>
 <!DOCTYPE html>
